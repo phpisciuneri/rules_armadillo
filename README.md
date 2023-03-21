@@ -6,7 +6,7 @@ Bazel build rules for [Armadillo](https://arma.sourceforge.net/).
 
 Uses [rules_foreign_cc](https://github.com/bazelbuild/rules_foreign_cc) to do a CMake configuration, build, and install of Armadillo from source.  This allows the user to include `@armadillo` in the `deps` argument in project `BUILD` files. See the examples folder for a simple example.
 
-This leverages [rules_openblas](https://github.com/phpisciuneri/rules-openblas) to first install [OpenBLAS](https://www.openblas.net/) and enables LAPACK support for Armadillo.
+This leverages [rules_openblas](https://github.com/phpisciuneri/rules_openblas) to first install [OpenBLAS](https://www.openblas.net/) and enables LAPACK support for Armadillo.
 
 **For usage see the instructions with the [latest release](https://github.com/phpisciuneri/rules_armadillo/releases/latest).**
 
