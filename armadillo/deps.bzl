@@ -7,9 +7,9 @@ def rules_armadillo_dependencies():
     maybe(
         http_archive,
         name = "openblas",
-        sha256 = "cba377eeb528aedf12ef1e3b46b35c40f7b7d384568fea0a19d18f3378b1ccb9",
-        strip_prefix = "rules-openblas-0.1.0",
-        url = "https://github.com/phpisciuneri/rules-openblas/archive/refs/tags/v0.1.0.tar.gz",
+        sha256 = "ca24ee0022dae4a03e70ee52eb5b977c480e0c4827e3a85fa4c259b4f3882cc4",
+        strip_prefix = "rules_openblas-0.1.1",
+        url = "https://github.com/phpisciuneri/rules_openblas/archive/refs/tags/v0.1.1.tar.gz",
     )
 
     maybe(
