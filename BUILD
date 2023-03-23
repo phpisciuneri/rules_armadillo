@@ -7,6 +7,11 @@ cmake(
         "OPENBLAS_PROVIDES_LAPACK": "true",
     },
     lib_source = "@net_sourceforge_projects_arma//:all-src",
+    out_data_dirs = ["share"],
+    out_static_libs = select({
+        "@bazel_tools//src/conditions:linux": ["libarmadillo.a"],
+        "@bazel_tools//src/conditions:windows": ["armadillo.lib"],
+    }),
     visibility = ["//visibility:public"],
     deps = ["@openblas"],
 )
