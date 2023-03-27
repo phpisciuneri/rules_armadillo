@@ -10,6 +10,7 @@ cmake(
     lib_source = "@net_sourceforge_projects_arma//:all-src",
     linkopts = select({
         "@bazel_tools//src/conditions:linux": ["-lpthread"],
+        "@bazel_tools//src/conditions:windows": [],
     }),
     out_data_dirs = ["share"],
     out_static_libs = select({
